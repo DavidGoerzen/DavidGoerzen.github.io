@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>David's Particule Web Communication Meanings  </title>
+
+    <h1 align=center>David's Web <a href="http://particle.io">Particle.io</a> App Meanings</h1>
+
+<font style="font-size:30px">
+
+<hr>
+Little Motor Drive:
+<br>
+Forwards = digitalWrite(d4,1)
+<br>
+Backwards = digitalWrite(d4,0
+<br>
+Powerful = analogWrite(A4,255)
+<br>
+Medium Powerful = analogWrite(A4,160)
+<br>
+Medium = analogWrite(A4,100)
+<br>
+Medium Low = analogWrite(A4,60)
+<br>
+Low = analogWrite(A4,35)
+<br>
+Off = analogWrite(A4,0)
+<br>
+Big Motor Drive:
+<br>
+Forwards = sendToParticle('digitalWrite(D6,1);') |-And-| sendToParticle('digitalWrite(D5,0);')
+<br>
+Backwards = sendToParticle('digitalWrite(D6,0);') |-And-| sendToParticle('digitalWrite(D5,1);')
+<br>
+Brake = sendToParticle('digitalWrite(D6,1);') |-And-| sendToParticle('digitalWrite(D5,1);')
+<br>
+Coast = sendToParticle('digitalWrite(D6,0);') |-And-| sendToParticle('digitalWrite(D5,0);')
+<br>
+Powerful = sendToParticle('analogWrite(A5,255);')
+<br>
+Medium Powerful = sendToParticle('analogWrite(A5,160)
+<br>
+Medium = sendToParticle('analogWrite(A5,100)
+<br>
+Medium Low = sendToParticle('analogWrite(A5,60)
+<br>
+Low = sendToParticle('analogWrite(A5,35)
+<br>
+Off = sendToParticle('analogWrite(A5,0)
+<br>
+<a href="https://gavidd.github.io/David/A06%20Web-App.html">Back To main Page</a>
