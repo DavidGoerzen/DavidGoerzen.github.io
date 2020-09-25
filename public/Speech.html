@@ -25,11 +25,12 @@ let transferRecognizer
 
     
 let recognizerOptions = {
-    vocabulary: '18w',        // only: up down left right
-   // vocabulary: '18w',                // all 18 words
+    vocabulary: 'directional4w',        // only: up down left right
+    vocabulary: '18w',                // all 18 words
     probabilityThreshold: 0.85,
   };
-
+    
+    
 async function startListening(options, onResult) {
   const {vocabulary, probabilityThreshold} = options;  
   recognizer = speechCommands.create('BROWSER_FFT', vocabulary);
