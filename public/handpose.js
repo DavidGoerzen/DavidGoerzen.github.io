@@ -13,6 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
+
+
 import * as tfwebgpu from '@tensorflow/tfjs-backend-webgpu';
 import * as tf from '@tensorflow/tfjs-core';
 import * as handpose from '@tensorflow-models/handpose';
@@ -20,6 +22,7 @@ import * as tfjsWasm from '@tensorflow/tfjs-backend-wasm';
 // TODO(annxingyuan): read version from tfjsWasm directly once
 // https://github.com/tensorflow/tfjs/pull/2819 is merged.
 import {version} from '@tensorflow/tfjs-backend-wasm/dist/version';
+
  */
 
 
@@ -27,6 +30,7 @@ import {version} from '@tensorflow/tfjs-backend-wasm/dist/version';
 tfjsWasm.setWasmPath(
     `https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@${
         version}/dist/tfjs-backend-wasm.wasm`);
+
 */
 
 
