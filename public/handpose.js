@@ -248,35 +248,12 @@ const landmarksRealTime = async (video) => {
       document.getElementById('myDiv02').innerHTML = 'thumb-index-touching'  
     }  else {
     
-      document.getElementById('myDiv02').innerHTML = 'nothing'  
+      document.getElementById('myDiv02').innerHTML = 'thumb-index-lshape'  
     } 
 
         
 
- console.log(result)
-      document.getElementById('myDiv01').innerHTML = ''  
-      
-      for (myLoop=0; myLoop <= 20; myLoop++){  
-            
-          document.getElementById('myDiv01').innerHTML += myLoop + ', x:' + result[myLoop][0].toFixed(0) + ', y:'+ result[myLoop][1].toFixed(0) + ', z:' + result[myLoop][2].toFixed(0) + '<br>'    
-        
-      } 
-        
-       
-        
-      let myThumbX = result[4][0]   //367
-      let myThumbY = result[4][1]   //160
-          
-      let myIndexX = result[8][0]   //369
-      let myIndexY = result[8][1]   //165
-        
-      if ( Math.abs(myIndexX - myThumbX) > 30     ){  
-             
-      document.getElementById('myDiv02').innerHTML = 'thumb-index-l'  
-    }  else {
-    
-      document.getElementById('myDiv02').innerHTML = 'nothing'  
-    }         
+ 
         
         
         
