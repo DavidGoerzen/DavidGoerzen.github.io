@@ -1,20 +1,3 @@
-/**
- * @license
- * Copyright 2020 Google LLC. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * =============================================================================
-
-
 import * as tfwebgpu from '@tensorflow/tfjs-backend-webgpu';
 import * as tf from '@tensorflow/tfjs-core';
 import * as handpose from '@tensorflow-models/handpose';
@@ -243,12 +226,12 @@ const landmarksRealTime = async (video) => {
       let myIndexX = result[8][0]   //369
       let myIndexY = result[8][1]   //165
         
-      if ( Math.abs(myIndexX - myThumbX) < 25     ){  
+      if ( Math.abs(myIndexX - myThumbX) < 20){  
              
       document.getElementById('myDiv02').innerHTML = 'thumb-index-touching'  
     }  else {
     
-      document.getElementById('myDiv02').innerHTML = 'thumb-index-lshape'  
+      document.getElementById('myDiv02').innerHTML = 'thumb-index-l_shape'  
     } 
 
         
